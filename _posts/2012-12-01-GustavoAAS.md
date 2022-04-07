@@ -1,0 +1,10 @@
+---
+layout: posts
+title:  "Proposta de arquitetura e protocolo para a geração automática de assinaturas de malwares"
+date:   2012-12-01 16:16:35 -0600
+categories: trabalho
+autornick: GustavoAAS
+autor: "Gustavo André Arrabal de Souza "
+orientador: "Prof. Dr. Marcos Antônio Cavenaghi"
+---
+Dado o crescimento exponencial na propagação de vírus pela rede mundial de computadores (Internet) e o aumento de sua complexidade, faz-se necessária a adoção de sistemas mais complexos ara a extração de assinaturas de malwares (assinatura de malwares - malicious software; é o nome ado a extração de informações únicas que levam a identificação do vírus, equivalente, aos humanos, a impressão digital). A arquitetura e o protocolo aqui propostos têm como objetivo tornar mais eficientes as assinaturas, através de técnicas que tornem suficiente uma única extração para comprometer todo um grupo de vírus. Essa eficiência se dá pela utilização de uma abordagem híbrida de extração de assinaturas, levando-se em consideração a análise do código e do comportamento do sample, assim também chamado um vírus. Os principais alvos desse sistema proposto são Polymorphics e Metamorphics Malwares, dada a dificuldade em se criar assinaturas que identifiquem toda uma família proveniente desses vírus. Tal dificuldade é criada pelo uso de técnicas que possuem como principal objetivo comprometer análises realizadas por especialistas. Os parâmetros escolhidos para realizar a análise comportamental são: Sistema de Arquivos; Registros do Windows; Dump da RAM e chamadas a API. Quanto à análise do código, o objetivo é realizar, no binário do vírus, divisões em blocos, onde é possível a extração de hashes. Essa técnica considera a instrução ali presente e sua vizinhança, sendo caracterizada como precisa. Em suma, com essas informações pretende-se prever e traçar um perfil de ação do vírus e, posteriormente, criar uma assinatura baseada no grau de parentesco entre eles (threshold), cujo objetivo é o aumento da capacidade de detecção de vírus que não façam parte da mesma família.

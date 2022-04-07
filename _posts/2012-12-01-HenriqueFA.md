@@ -1,0 +1,10 @@
+---
+layout: posts
+title:  "Paralelização de algoritmos de trimap utilizando arquitetura CUDA"
+date:   2012-12-01 16:16:34 -0600
+categories: trabalho
+autornick: HenriqueFA
+autor: "Henrique Ferraz de Arruda"
+orientador: "Prof. Assoc. Antônio Carlos Sementille  Coorientador: Prof. Assoc. João Fernando Marar"
+---
+Técnicas de combinações de imagens, com extração de objetos para montar uma cena final, são muito utilizadas em aplicações que vão desde montagens em fotos até produções cinematográficas. Estas técnicas são chamadas de matting digital. Com elas é possível diminuir o custo das produções, pois não é necessário que o ator seja filmado no local onde a cena final deveria acontecer. Esta característica também favorece sua utilização em programas realizados para a televisão digital, que demanda uma alta qualidade da imagem. Muitos algoritmos de matting digital utilizam marcações feitas nas imagens, para demarcar o que é o plano da frente, plano de fundo e as áreas de incerteza. Esta marcação é chamada de trimap, que é um mapa triplo contendo estas três informações. O trimap é feito, geralmente, a partir de marcações manuais. Neste projeto foram criados métodos que possam ser utilizados em algoritmos de matting digital, com restrição de tempo e sem a interação humana, ou seja, a criação de um algoritmo que gera automaticamente o trimap. Este que pode ser gerado a partir da diferença entre a cor do plano de um fundo arbitrário e o plano da frente, ou pela utilização de um mapa de profundidade. Foi criado ainda um método de matting, baseado no Geodesic Matting (BAI; SAPIRO, 2009), que possui um tempo de processamento inferior ao original. Com o intuito de melhorar o desempenho das aplicações de geração do trimap e dos algoritmos geradores do alphamap (mapa que associa um valor de transparência a cada pixel da imagem), possibilitando o seu uso em aplicações com restrição de tempo, foi utilizada a arquitetura CUDA. Aproveitando, assim, o poder computacional e as características da GPGPU, que é massivamente paralela.
